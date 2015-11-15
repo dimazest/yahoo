@@ -1,0 +1,77 @@
+\documentclass[10pt]{article}
+
+\usepackage{setspace}
+\usepackage{fullpage}
+\usepackage{parskip}
+
+\usepackage[T1]{fontenc}
+\usepackage{type1cm}
+\usepackage{lmodern}
+\renewcommand*\familydefault{\sfdefault}
+
+\title{Research statement}
+\author{
+Dmitrijs Milajevs \\
+{\tt d.milajevs@qmul.ac.uk} \\
+}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\thispagestyle{empty}
+
+
+I'm a third year PhD student at Queen Mary University of London studying
+application of categorical distributional semantics to dialogue processing,
+information retrieval and paraphrase detection.
+
+Distributional semantics is a field of computational linguistics that studies
+meaning representation of words, phrases, sentences and texts. It is based on
+the distributional hypothesis of Harris that semantically similar words tend to
+appear in similar contexts and famous Firth's quote ``You shall know a word by a
+company it keeps''. Traditionally, the meanings of words are represented as
+vectors that are derived from a co-occurrence matrix.
+
+By measuring the distance between the vectors of two words, one can estimate how
+similar the meanings of the words are. Word similarity was applied to many tasks
+including English language tests, automatic thesaurus generation, advertisement
+and query expansion.
+
+Distributional hypothesis is used not only in distributional semantics. A
+similar idea lies behind the success of neural language models (Yoshua Bengio's
+work), which smooths out the probability mass from the seen events only to the
+similar unseen events to fight the curse of dimensionality. Moreover, this
+models can be applied to learn word vectors that are competitive with and often
+outperform traditional co-occurrence based methods, for example,
+\texttt{word2vec}.
+
+Learning based models (contrary to the co-occurrence based models) is one of the
+current trends in distributional semantics. However, so far, the community does
+not agree whether learned models are, indeed, superior (for example, Marco
+Baroni's model comparison) or whether there are certain parameters that learning
+models successfully tune, which can be mirrored in the traditional approaches to
+improve their performance as suggested by Goldberg and Levy.
+
+I am interested in a compositional extension of word similarity to phrases,
+sentences and documents. Concretely, a vector representation of a sentence is
+built recursively starting with the word vectors and is governed by the
+grammatical structure of the sentence. Knowing that two sentences are similar,
+might help in parsing, machine translation, information retrieval, dialogue act
+tagging, paraphrase detection and many other tasks.
+
+I have applied compositional methods to dialogue act tagging and showed
+that distributional representation improves over the bag of words models. I have
+also compared co-occurrence based models with learned vectors: models based on
+learned vectors mostly outperformed their competitors, however, there was no
+dominant compositional procedure. Finally, I applied categorical compositional
+semantics to information retrieval, our experiments suggest that categorical
+composition might improve ranking.
+
+At Yahoo I would like to look closer into the paraphrase detection task and
+study the behavior of different compositional methods. I wish to work with
+Fabrizio Silvestri and Peter Mika.
+
+
+\end{document}
